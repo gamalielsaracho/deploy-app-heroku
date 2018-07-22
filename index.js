@@ -15,11 +15,7 @@ app.get('/', function (req, res) {
 })
 
 
-app.listen(config.server.port, function (err) {
-	if(err) {
-		console.log('Error al correr en el puerto '+config.server.port)
-		return
-	}
-
+app.listen(config.server.port, function () {
+	
 	console.log('Corriendo en el puerto'+config.server.port)
 })
