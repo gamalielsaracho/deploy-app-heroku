@@ -1,22 +1,17 @@
 {
-  "name": "deploy-app-node-heroku",
+  "name": "app-deploy-heroku",
   "version": "1.0.0",
   "description": "app deploy test",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gamalielsaracho/deploy-app-node-heroku.git"
-  },
   "author": "gamaliel saracho",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gamalielsaracho/deploy-app-node-heroku/issues"
+  "engines": {
+    "node": "8.11.1"
   },
-  "homepage": "https://github.com/gamalielsaracho/deploy-app-node-heroku#readme",
   "dependencies": {
     "express": "^4.16.3"
   }
