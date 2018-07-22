@@ -2,8 +2,8 @@ var express = require('express')
 var path = require('path')
 var app = express()
 
-
-var config = require('./config')
+var PORT = process.env.PORT || 5000
+// var config = require('./config')
 
 // static files.
 
@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 })
 
 
-app.listen(config.server.port, function () {
+app.listen(PORT, function () {
 	
-	console.log('Corriendo en el puerto'+config.server.port)
+	console.log('Corriendo en el puerto'+PORT)
 })
